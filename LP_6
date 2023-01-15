@@ -1,0 +1,23 @@
+#include <iostream> 
+#include <iomanip> 
+#include "windows.h"
+#include <math.h>
+
+
+using namespace std;
+
+int main()
+{
+    int x;
+    cout << "Enter x =";
+    cin >> x;
+    float rez, sum = 0;
+    for (int n = 1; n < 11; n++)
+    {
+        sum = sum + pow(n, 2);
+    }
+
+    rez = (sum + sin(x)) / (x + 2);
+    cout << "Y =  " << rez << endl;
+    return 0;
+}
