@@ -1,0 +1,25 @@
+#include <iostream> 
+#include <iomanip> 
+#include "windows.h"
+#include <math.h>
+
+
+using namespace std;
+
+int main()
+{
+    int y, n;
+    cout << "Enter y = ";
+    cin >> y;
+    cout << "Enter n = ";
+    cin >> n;
+    float rez, dob = 1;
+    for (int i = 1; i < 4; i++)
+    {
+        dob = dob * pow(n, 2);
+        
+    }
+    rez = pow(y, 3) + dob;
+    cout << "Z = " << dob;
+    return 0;
+}
