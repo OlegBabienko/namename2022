@@ -1,25 +1,32 @@
-#include <iostream> 
-#include <iomanip> 
-#include "windows.h"
-#include <math.h>
-
-
+// min a in array.cpp : This file contains the 'main' function. Program execution begins and ends there.
+#include <iostream>
+#include <ctime>
 using namespace std;
 
 int main()
 {
-    int y, n;
-    cout << "Enter y = ";
-    cin >> y;
-    cout << "Enter n = ";
-    cin >> n;
-    float rez, dob = 1;
-    for (int i = 1; i < 4; i++)
+    srand(time(NULL));
+    const int SIZE = 10;
+    int arr[SIZE];
+
+    for (int i = 0; i < SIZE; i++)
     {
-        dob = dob * pow(n, 2);
-        
+        int RandValue = rand() % 20;
+        arr[i] = RandValue; 
     }
-    rez = pow(y, 3) + dob;
-    cout << "Z = " << dob;
-    return 0;
+    int minValue = arr[0];
+    for (int k = 1; k < SIZE; k++)
+    {
+        if (arr[i] < minValue)
+        {
+            minValue = arr[k];
+        }
+    }
+
+    std::cout << " youre min value:" << minValue << endl;
+
+    for (int i = 0; i < SIZE; i++)
+    {
+        cout << arr[i] << endl;
+    }
 }
