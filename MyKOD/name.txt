@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+class Present 
+{
+public:
+    static int Count; 
+    int weight;
+    Present(int weight) 
+    {
+        Count++;
+        value = Count;
+    }
+    int GetCount()
+    {
+        return value;
+    }
+private:
+    int value;
+};
+int Present::Count = 0;
+int main()
+{
+    int a = 9;
+    int b = 54;
+    int* ap = &a; 
+    int* bp; 
+    bp = &b;
+    cout << "\nint a =\t" << a << "\t and it in\t" << ap; 
+    cout << "\nint b =\t" << b << "\t and it in\t" << bp << endl;
+    *(ap) = 100; 
+    cout << endl << "Now a = " << a << endl;
+    ap = (int*)108;
+    bp = (int*)100;
+    cout << endl << "ap = " << ap << endl;
+    cout << "bp = " << bp << endl;
+    cout << "ap - bp = " << ap - bp << endl << endl;
+        cout << "ap = " << ap << "\t ap+3 = " << 3 + ap << endl;
+        ap++;
+    cout << "ap = " << ap << endl;
+        bp += 3;
+    cout << "bp = " << bp << endl;
+    if (ap == bp) cout << "Now ap == bp" << endl;
+    bp++;
+    cout << "ap = " << ap << endl;
+    cout << "bp = " << bp << endl;
+    if (ap < bp)  cout << "Now ap < bp" << endl << endl;
+    int inTr = 7;
+    void* ptr = &inTr; 
+    cout << "ptr = " << ptr << endl;
+    float floaTr = 7.03;
+    ptr = &floaTr;
+    cout << "ptr = " << ptr << endl;
+    const int constA = 5;
+    const int* constPtr = &constA; 
+    
+
+    Present Toy1(9);
+    Present Toy2(3);
+    Present Toy3(24);
+    Present Toy4(12);
+    Present Toy5(7);
+
+    cout << "We have " << Toy5.GetCount() << " Presents" << endl;
+
+}
