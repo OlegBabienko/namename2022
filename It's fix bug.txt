@@ -2,7 +2,6 @@
 #include <iomanip>
 #include "windows.h"
 using namespace std;
-
 int main()
 {
 	int A1[11];
@@ -23,6 +22,4 @@ int main()
 	int max_elem = 0;
 	for (int i = 0; i < 11; i++)
 	cout << "max_elem =  " << max_elem << endl;
-
-
 }
