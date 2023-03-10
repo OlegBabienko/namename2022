@@ -3,6 +3,8 @@
 #include "windows.h"
 using namespace std;
 
+//Знизу команда int main
+
 int main()
 {
 	int A1[11];
