@@ -2,6 +2,12 @@
 #include <iomanip>
 #include "windows.h"
 using namespace std;
+<<<<<<< HEAD:It's fix bug.txt
+=======
+
+//Знизу команда int main
+
+>>>>>>> master:name2.txt
 int main()
 {
 	int A1[11];
