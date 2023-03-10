@@ -1,0 +1,26 @@
+#pragma once
+#include <iostream>
+#include <iomanip>
+#include "windows.h"
+
+using namespace std;
+
+float func_average(float a, float b)
+{
+	float c = (a + b) / 2;
+	return c;
+}
+
+float func_average(float, float);
+
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int A, B, rez;
+	cin >> A;
+	cout << endl;
+	cin >> B;
+	cout << endl;
+	rez = func_average(A, B);
+}

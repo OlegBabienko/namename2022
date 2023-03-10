@@ -1,0 +1,37 @@
+#include <iostream>
+#include <iomanip>
+#include "windows.h"
+using namespace std;
+
+int main()
+{
+	int A1[11];
+	srand(time(NULL));
+	int sum = 0;
+
+	for (int i = 0; i < 11; i++)
+	{
+		A1[i] = rand() % (81) - 40;
+		cout << "A[" << i << "] = " << A1[i] << endl;
+		if (A1[i] > 0)
+		{
+			sum += A1[i];
+		}
+
+	}
+	cout << "sum = " << sum << endl;
+	int max_elem = 0;
+	for (int i = 0; i < 11; i++)
+	{
+
+		if (A1[i] > max_elem)
+		{
+			max_elem = A1[i];
+		}
+
+	}
+
+	cout << "max_elem =  " << max_elem << endl;
+
+
+}
